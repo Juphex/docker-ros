@@ -15,6 +15,11 @@ source /opt/ros/noetic/setup.bash
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
+# use profile https://apple.stackexchange.com/questions/12993/why-doesnt-bashrc-run-automatically
+echo "source /opt/ros/noetic/setup.bash" >> ~/.profile
+source ~/.profile
+
+
 sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential -y
 
 sudo apt install python3-rosdep -y
