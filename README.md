@@ -2,7 +2,7 @@
 
 Based on [docker-ubuntu-vnc-desktop](https://github.com/fcwu/docker-ubuntu-vnc-desktop).
 
-Provides access to a clean ROS installation. Works and tested on Windows.
+Provides access to a clean **ROS noetic** installation. Works and tested on Windows.
 
 ### Run Container
 This command runs a docker containe with the name dockerros. The (Windows) directory C:/ws is shared with  home/ubuntu/catkin_ws. 
