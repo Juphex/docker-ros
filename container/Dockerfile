@@ -13,3 +13,5 @@ RUN /setup_noetic.sh
 
 COPY ./create_workspace.sh /create_workspace.sh
 RUN /create_workspace.sh
+
+ENV ROS_PACKAGE_PATH=/home/ubuntu/catkin_ws/src:/opt/ros/kinetic/share
