@@ -1,6 +1,6 @@
 # docker-ros
 ## About
-This project provides an easy way to get started with ROS noetic. It allows the user to run the ROS noetic environment on Windows machines, which would otherwise require some additional effort. The container is based on docker-ubuntu-vnc-desktop, which allows access to the ROS installation through a VNC connection. The container can be used to quickly spin up and access a ROS environment, with all the relevant tools installed and configured. The container can also be used to quickly share ROS projects with other users, as the data and configuration is stored in the container.
+This project provides an easy way to get started with ROS noetic and is especially helpful for developing using the ROS Noetic environment. It allows the user to run the ROS noetic environment on Windows machines, which would otherwise require some additional effort. The container is based on docker-ubuntu-vnc-desktop, which allows access to the ROS installation through a VNC connection. The container can be used to quickly spin up and access a ROS environment, with all the relevant tools installed and configured. The container can also be used to quickly share ROS projects with other users, as the data and configuration is stored in the container. Furthermore, the container is configured to support the installation of integrated development environments (IDEs) in the shared workspace, which makes development easier and faster.
 
 Based on image [docker-ubuntu-vnc-desktop](https://github.com/fcwu/docker-ubuntu-vnc-desktop).
 
