@@ -14,6 +14,11 @@ The following code is already added to source ROS noetic in ~/.bashrc and in ~/.
 `echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc`
 
+## Build Container
+Inside folder `container/` run
+
+`docker build .` 
+
 ## Run Container
 This command will run a Docker container with the name "dockerros" and will map the port 6080 to port 80 on the host machine. It will also mount the c:/ws directory from the host machine to the /home/ubuntu/catkin_ws directory in the container, and the container will be run in detached mode. Additionally, the shared memory size of the container will be limited to 512MB.
 
