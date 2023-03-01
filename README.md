@@ -1,6 +1,6 @@
 # docker-ros
 ## About
-This project provides an easy way to get started with ROS noetic. It allows the user to run the ROS noetic environment on Windows machines, which would otherwise require some additional effort. The container is based on docker-ubuntu-vnc-desktop, which allows access to the ROS installation through a VNC connection. The container can be used to quickly spin up and access a ROS environment, with all the relevant tools installed and configured. The container can also be used to quickly share ROS projects with other users, as the data and configuration is stored in the container.
+This project provides an easy way to get started with ROS noetic and is especially helpful for developing using the ROS Noetic environment. It allows the user to run the ROS noetic environment on Windows machines, which would otherwise require some additional effort. The container is based on docker-ubuntu-vnc-desktop, which allows access to the ROS installation through a VNC connection. The container can be used to quickly spin up and access a ROS environment, with all the relevant tools installed and configured. The container can also be used to quickly share ROS projects with other users, as the data and configuration is stored in the container. Furthermore, the container is configured to support the installation of integrated development environments (IDEs) in the shared workspace, which makes development easier and faster.
 
 Based on image [docker-ubuntu-vnc-desktop](https://github.com/fcwu/docker-ubuntu-vnc-desktop).
 
@@ -13,6 +13,11 @@ The following code is already added to source ROS noetic in ~/.bashrc and in ~/.
 
 `echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc`
+
+## Build Container
+Inside folder `container/` run
+
+`docker build . --tag dockerros` 
 
 ## Run Container
 This command will run a Docker container with the name "dockerros" and will map the port 6080 to port 80 on the host machine. It will also mount the c:/ws directory from the host machine to the /home/ubuntu/catkin_ws directory in the container, and the container will be run in detached mode. Additionally, the shared memory size of the container will be limited to 512MB.
