@@ -6,6 +6,7 @@ RUN wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | \
 RUN apt-get update -q && \
     apt-get upgrade -yq
     
+RUN apt-get update && apt-get install python3-pip -y
 
 COPY ./setup_noetic.sh /setup_noetic.sh
 
